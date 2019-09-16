@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["src/components"],
+      "@components/atoms": ["src/components/atoms"],
+      "@components/molecules": ["src/components/molecules"],
+      "@components/organisms": ["src/components/organisms"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

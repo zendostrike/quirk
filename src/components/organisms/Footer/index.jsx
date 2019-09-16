@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const NavBar = styled.div`
-  background: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   font-size: 13px;
   display: flex;
   justify-content: space-between;
@@ -28,13 +28,10 @@ const Header = () => (
   <>
     <NavBar>
       <LeftSection>
-        <MenuItem>Quirk.com</MenuItem>
-        <MenuItem>Top Players</MenuItem>
-        <MenuItem>Top Teams</MenuItem>
+        <MenuItem>@team</MenuItem>
       </LeftSection>
       <RightSection>
-        <MenuItem>Login</MenuItem>
-        <MenuItem>Registro</MenuItem>
+        <MenuItem>@w</MenuItem>
       </RightSection>
     </NavBar>
   </>

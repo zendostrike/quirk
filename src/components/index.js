@@ -1,2 +1,3 @@
-export { default as WeekPlayer } from "./WeekPlayer";
-export { default as NewsBox } from "./NewsBox";
+export * from './atoms'
+export * from './molecules'
+export * from './organisms'

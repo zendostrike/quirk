@@ -1,21 +1,21 @@
-import MainLayout from "../src/layouts/main";
-import { WeekPlayer, NewsBox } from "../src/components";
+import MainLayout from '../src/layouts/main'
+import { NewsBox, Button } from '@components'
 
 const Home = () => (
   <MainLayout>
     <section>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
-        <WeekPlayer title="Jugador de la semana" />
+      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
         <div>
           <h3>Actividad</h3>
-          <NewsBox title="Vota al jugador de la semana" />
-          <NewsBox title="Vota al team de la semana" />
-          <NewsBox title="Predicciones" />
+          <NewsBox title='Vota al jugador de la semana' />
+          <NewsBox title='Vota al team de la semana' />
+          <NewsBox title='Predicciones' />
+          <Button text='Ask here' />
         </div>
       </div>
     </section>
     <section>asd</section>
   </MainLayout>
-);
+)
 
-export default Home;
+export default Home

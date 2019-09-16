@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const NavBar = styled.div`
-  background: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   font-size: 13px;
   display: flex;
   justify-content: space-between;
