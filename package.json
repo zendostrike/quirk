@@ -30,12 +30,10 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "**/*": [
-        "prettier-standard",
-        "git add"
-      ]
-    }
+    "**/*": [
+      "prettier-standard",
+      "git add"
+    ]
   },
   "config": {
     "commitizen": {
