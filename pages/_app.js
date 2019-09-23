@@ -1,6 +1,7 @@
 import App from 'next/app'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
+import { appWithTranslation } from '../i18n'
 
 const theme = {
   colors: {
@@ -13,7 +14,7 @@ const theme = {
   }
 }
 
-export default class MyApp extends App {
+class MyApp extends App {
   render () {
     const { Component, pageProps } = this.props
     return (
@@ -23,3 +24,5 @@ export default class MyApp extends App {
     )
   }
 }
+
+export default appWithTranslation(MyApp)

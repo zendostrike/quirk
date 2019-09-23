@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Typography } from '@components'
+import { Typography, Button } from '@components'
 
 const Container = styled.section`
   color: ${({ theme }) => theme.colors.primary};
@@ -30,8 +30,9 @@ const Hero = () => (
   <Container>
     <LeftSection>
       <MenuItem>
-        <Typography.H1>Quirk.com</Typography.H1>
-        <Typography.H4>Hellou</Typography.H4>
+        <Typography.H1>Test your ideas</Typography.H1>
+        <Typography.H4>Get your MVP Product in less than 3 weeks</Typography.H4>
+        <Button text='Start now' />
       </MenuItem>
     </LeftSection>
     <RightSection />

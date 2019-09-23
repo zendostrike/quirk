@@ -1,12 +1,24 @@
-import MainLayout from '../src/layouts/main'
-import { Hero } from '@components'
+import PropTypes from "prop-types";
 
-const Home = () => (
+import MainLayout from "../src/layouts/main";
+import { Hero, Advantages, Pricing } from "@components";
+import { withTranslation } from "../i18n";
+
+const Home = ({ t }) => (
   <MainLayout>
     <Hero />
-    <section>heu</section>
-    <section>asd</section>
+    <Advantages />
+    <Pricing />
+    <div>{t("test-your-ideas")}</div>
   </MainLayout>
-)
+);
 
-export default Home
+Home.getInitialProps = async () => ({
+  namespacesRequired: ["common"]
+});
+
+Home.propTypes = {
+  t: PropTypes.func.isRequired
+};
+
+export default withTranslation("common")(Home);
