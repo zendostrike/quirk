@@ -8,9 +8,9 @@ const ItemList = styled.div`
 `
 
 const renderList = list => {
-  return list.map(element => {
+  return list.map((element, index) => {
     return (
-      <ItemList>
+      <ItemList key={index}>
         <div>-</div>
         <div>{element}</div>
       </ItemList>
